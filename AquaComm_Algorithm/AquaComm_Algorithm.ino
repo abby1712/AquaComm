@@ -1,4 +1,4 @@
- updated algorithm for the transmitter:
+Algorithm for the transmitter:
 
 Take the input message and encrypt it using AES encryption.
 Modulate the encrypted message using Manchester coding.
@@ -8,7 +8,7 @@ If an acknowledgement is received, the transmission was successful and the LOS L
 If no acknowledgement is received, retransmit the message after a delay and go to step 4.
 Send a dummy signal periodically to check for LOS.
 
-And here's the updated algorithm for the receiver:
+ algorithm for the receiver:
 
 Send a dummy signal to check for LOS.
 Receive the modulated message using the photodiode.
